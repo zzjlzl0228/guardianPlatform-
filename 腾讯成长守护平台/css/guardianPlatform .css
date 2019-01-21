@@ -1,0 +1,871 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    position: relative;
+     /* 设置背景图片时必须设置其高度，否则背景图片会因为高度不固定而无法显示 */
+    
+}
+/* 家庭守护中心 */
+.home-wrap {
+    width: 100%;
+    height: 920px;   
+    position: fixed;
+    background: url('../img/banner-1.jpg') no-repeat;
+}
+.w {
+    /* position: relative; */
+    min-width: 1000px;
+}
+/* 顶部导航 */
+.nav {
+    width: 100%;
+    height: 100px;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    margin: 0 auto;
+  
+}
+.nav-box {
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 10px 20px 0 rgba(136,136,136,.05);
+}
+.top-nav {
+    width: 1200px;
+    padding-top: 20px;
+    /* position: relative; */
+}
+/* 左侧logo */
+.nav-left {
+    width: 250px;
+    height: 50px;
+}
+/* 中间 */
+.nav-center {
+    width: 500px;
+    
+}
+.nav-center ul {
+    height: 50px;
+    margin-left: 30px;
+}
+.nav-center li {
+    margin: 0 20px;
+}
+.nav-center li a{
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+/* 点击首页底下会出现下边框 */
+.active {
+    border-bottom: 3px solid skyblue;
+}
+/* 右侧 */
+.nav-right {
+    width: 300px;
+}
+.nav-service{
+    margin-right: 10px;
+}
+.nav-service p {
+    font-size: 16px;
+    padding-top: 15px;
+}
+.nav-service p:last-child {
+    font-size: 25px;
+}
+.login p>span{
+    width: 60px;
+    height: 30px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.log_out {
+    display: none;
+}
+.log_out1 {
+    width: 100px;
+    height: 50px;
+    background-color: #333;
+    box-shadow: 0 10px 10px 0 rgba(48,131,201,.1);
+    border-radius: 6px;
+    border: none;
+    position: absolute;
+    top: 25px;
+    right: -15px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.sanjiao-top {
+    width: 0px;
+    height:0px;
+    border-top: 10px solid rgb(0, 0, 0,0);
+    border-left: 10px solid rgba(0,0,0,0);
+    border-bottom:10px solid rgba(0,0,0,0.8);
+    border-right:10px solid rgba(0,0,0,0);
+    position: absolute;
+    top: 70px;
+    right: 140px;
+}
+/* 中间内容部分 */
+.banner{
+    width: 700px;
+    height: 400px;
+    /* border: 1px solid #ccc; */
+    position: absolute;
+    top: 200px;
+   
+}
+.banner h1,h2 {
+
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: '幼圆';
+    margin-top: 50px;
+}
+.banner h2 {
+   
+    font-size: 35px;
+    margin-top: 70px;
+    font-style: normal;
+}
+.banner img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.banner p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    font-family: "幼圆";
+    font-weight: 500;
+    margin-left: 20px;
+} 
+/* 右侧在线服务电话 */
+.service-online {
+    width: 145px;
+    height: 145px;
+    background: url('../img/service-btn.png') no-repeat;
+    position: fixed;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%) scale(.8);
+    background-image: linear-gradient(0deg,#47d998 0,#01d5d8 100%);
+    background-color: #07d6d3;
+    border-radius: 50%;
+    z-index: 999;
+}
+.service-online:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+.service-online .service-btn {
+    width: 60px;
+    height: 60px;
+    margin: 25px auto 0;
+}
+.service-online .spr {
+    background: url('../img/spr.png') no-repeat -210px -164px;
+    background-size: 424px 324px;
+}
+.service-online p {
+    font-size: 19px;
+    color: #fff;  
+    margin-top: 15px; 
+    text-align: center; 
+}
+/* 主要背景 */
+.main-bg {
+    width: 100%;
+    padding-top: 700px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+.main-bg .bg1 {
+    height: 378px;
+    background: url(../img/bg-1.png) no-repeat center;
+}
+.main-bg .bg2 {
+    height: 900px;
+    background: url(../img/bg-2.jpg) no-repeat center;
+}
+.main-bg .bg3{
+    height: 1506px;
+    background: url(../img/bg-3.jpg) no-repeat center;
+}
+.main-bg .bg4 {
+    height: 260px;
+    background: #fff;
+}
+.main1 {
+    width: 710px;
+    margin: 0 auto;
+    position: absolute;
+    top: 1080px;
+    height: 620px;
+    
+}
+.main1 .iphone1 {
+    height: 620px;
+    background: url(../img/phone-1.png) no-repeat center;
+    
+}
+.iphone1 .iphone1-jiantou {
+    width: 95px;
+    height: 62px;
+    background:url(../img/spr.png) no-repeat -121px -77px;
+    position: absolute;
+    top: 300px;
+    left: 372px;
+}
+/* 手机上面的图片 */
+.iphone1 .iphone1-img {
+    width: 488px;
+    height: 295px;
+    background: url(../img/phone-1-m.png) no-repeat;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+.iphone1 .iphone-jiantou-1 {
+    width: 95px;
+    height: 62px;
+    background: url(../img/spr.png) no-repeat -247px -95px;
+    position: absolute;
+    top: 373px;
+    left: 365px;
+}
+.text-right {
+    width: 560px;
+    position: absolute;
+    top: 46px;
+    left: 673px;
+}
+.text-right .title{
+    font-size: 60px;
+    color: #333;
+    line-height: 53px;
+    text-align: right;
+}
+.text-right .title2{
+    font-size: 24px;
+    line-height: 53px;
+    color: #565656;
+    text-align: right;
+}
+/* 查询 */
+.inquire {
+    margin-top: 70px;
+}
+/* 左侧查询设置 */
+.inquire .inquire-left {
+    float: left;
+}
+.inquire-left .inquire-left-img {
+    height: 65px;
+    width: 80px;
+    background: url(../img/spr.png) no-repeat -6px -268px;
+    margin-left: 80px;
+}
+.inquire-left .inquire-left-text {
+    width: 165px;
+}
+.inquire-left .inquire-left-text span{
+    font-size: 22px;
+    line-height: 32px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* 右侧禁止 */
+.inquire-right .inquire-right-img {
+    height: 70px;
+    width: 80px;
+    background: url(../img/spr.png) no-repeat -357px -11px;
+    margin-left: 55px;
+}
+.inquire-right .inquire-right-text p {
+    font-size: 22px;
+    line-height: 32px;
+    display: inline-block;
+}
+/* 下 */
+.text-right-bottom {
+    margin-top: 50px;
+    width: 420px;
+    height: 80px;
+    background-color: rgba(255,255,255,.8);
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.1);
+    padding :50px 60px;
+    position: absolute;
+    top: 250px;
+    left: 28px;
+    border-radius: 10px;
+    /* box-sizing: border-box; */
+}
+.text-right-bottom .f1 {
+    float: left;
+}
+.text-right-bottom .f1 p {
+    font-size: 26px;
+    color: #565656;
+    margin-top: 14px;
+    line-height: 1;
+}
+.text-right-bottom .f1 span {
+    color: #989898;
+}
+.text-right-bottom .f2 {
+    float: right;
+    width: 95px;
+    height: 95px;
+    background: url(../img/spr.png) no-repeat -10px -70px;
+}
+.text-right-bottom .ewm-box {
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: -220px;
+    left: 274px;
+    padding: 22px;
+    display: none;
+    
+}
+
+.sanjiao {
+    width: 0px;
+    height:0px;
+    border-top: 20px solid rgb(0, 0, 0,0.5);
+    border-left: 20px solid rgba(0,0,0,0);
+    border-bottom:20px solid rgba(0,0,0,0);
+    border-right:20px solid rgba(0,0,0,0);
+    position: absolute;
+    top: 244px;
+    left: 140px;
+}
+.text-right-bottom .ewm-box img {
+    width: 200px;
+    height: 200px;
+}
+
+.main2 {
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    top: 1800px;
+    left: 50%;
+    margin-left: -600px;
+}
+.main2-banner {
+    width: 560px;
+    padding-top: 65px;
+    box-sizing: border-box;
+}
+.main2-banner .title {
+    font-size: 60px;
+    color: #333;
+    line-height: 53px;
+    text-align: left;
+}
+.main2-banner .title2 {
+    font-size: 24px;
+    line-height: 53px;
+    color: #565656;
+    text-align: left;
+}
+.inquire-left .inquire-left-img1 {
+    height: 65px;
+    width: 80px;
+    margin-left: 0;
+    background: url("../img/spr.png") no-repeat -102px -267px;
+}
+.inquire-right .inquire-right-img2 {
+    background: url("../img/spr.png") no-repeat -3px -177px;
+    height: 70px;
+    width: 80px;
+    margin-left: 35px;
+}
+.inquire-right .inquire-right-text {
+    margin-right: 70px;
+}
+.text-right-bottom1 {
+    margin-top: 50px;
+    width: 420px;
+    height: 80px;
+    background-color: rgba(255,255,255,.8);
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.1);
+    padding :50px 60px;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    border-radius: 10px;
+    /* box-sizing: border-box; */
+}
+.text-right-bottom1 .f1 {
+    float: left;
+}
+.text-right-bottom1 .f1 p {
+    font-size: 26px;
+    color: #565656;
+    margin-top: 14px;
+    line-height: 1;
+}
+.text-right-bottom1 .f1 span {
+    color: #6e5757;
+}
+.text-right-bottom1 .f2 {
+    float: right;
+    width: 95px;
+    height: 95px;
+    background: url(../img/spr.png) no-repeat -10px -70px;
+}
+.text-right-bottom1 .ewm-box-1 {
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: -220px;
+    left: 274px;
+    padding: 22px;
+    display: none;
+    
+}
+
+.sanjiao1 {
+    width: 0px;
+    height:0px;
+    border-top: 20px solid rgb(0, 0, 0,0.5);
+    border-left: 20px solid rgba(0,0,0,0);
+    border-bottom:20px solid rgba(0,0,0,0);
+    border-right:20px solid rgba(0,0,0,0);
+    position: absolute;
+    top: 244px;
+    left: 140px;
+}
+.text-right-bottom1 .ewm-box-1 img {
+    width: 200px;
+    height: 200px;
+}
+/* 右侧图片 */
+.main2 .phone {
+    width: 630px;
+    height: 490px;
+    position: relative;
+}
+.phone-2-img {
+    width: 757px;
+    height: 566px;
+    background: url(../img/phone-2.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -55px;
+    top: -277px;
+    
+}
+.phone-2-m {
+    width: 610px;
+    height: 423px;
+    background: url(../img/phone-2-m.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+    left: 116px;
+    
+}
+
+.phone-2-img .arr {
+    width: 95px;
+    height: 62px;
+    background:url(../img/spr.png) no-repeat -249px -14px;
+    position: absolute;
+    top: 325px;
+    left: 310px;
+}
+.phone-2-img .arr1 {
+    width: 95px;
+    height: 62px;
+    background: url(../img/spr.png) no-repeat -99px -176px;
+    position: absolute;
+    top: 408px;
+    left: 296px;
+}
+
+/* 第四个主页面 */
+.main3 {
+    width: 1200px;
+    position: absolute;
+    top: 2430px;
+    left: 50%;
+    height: 950px;
+    padding-top: 260px;
+    margin-left: -600px;
+    
+}
+.main3 h1 {
+    font-size: 60px;
+    color: #333;
+    line-height: 53px;
+    text-align: center;
+    
+}
+.main3 p {
+    font-size: 24px;
+    line-height: 53px;
+    color: #565656;
+    text-align: center;
+}
+.jcarousel-wrapper {
+    width: 1060px;
+    height: 420px;
+    margin: 70px auto 0;
+    position: relative;
+}
+.swipper-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+.swipper-slide {
+    width: 1060px;
+    height: 420px;
+    float: left;
+    box-sizing: content-box;
+    
+}
+/* 第一张图左侧图片 */
+.img-left {
+    width: 193px;
+    height: 163px;
+    background: url(../img/case-spr.png) no-repeat -3px -176px;
+    display: block;
+    margin:45px 60px 0 0;
+}
+.text-box {
+    width: 790px;
+}
+.text-box h2{
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.text-box p {
+    margin: 0 auto 10px;
+    font-size: 22px;
+    color: #989898;
+    line-height: 35px;
+    text-align: left;
+}
+.text-box span {
+    color: #333;
+}
+.img-s {
+    background: url(../img/case-spr.png) no-repeat  -3px -354px;
+}
+.img-s1 {
+    background: url(../img/case-spr.png) no-repeat  -3px -3px;
+}
+
+/* 小圆点 */
+.controls {
+    width: 100%;
+    position: absolute;   
+    bottom: -100px;
+    left: 0;
+    text-align: center;
+}
+.controls a {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    border: 1px solid #24d7b8;
+    font-size: 0;
+    text-indent: -999em;
+}
+.controls a.active1 {
+    background: #01d5d8;
+}
+.main3 .prev {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background: url(../img/css_spr3.png) no-repeat -163px -186px;
+    position: absolute;
+    top: 80px;
+    left: -160px;
+    z-index: 15;
+    box-shadow: 0 5px 30px 0 rgba(0,0,0,.15);
+}
+.main3 .next {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background: url(../img/css_spr3.png) no-repeat -263px -186px;
+    position: absolute;
+    top: 80px;
+    right: -160px;
+    z-index: 15;
+    box-shadow: 0 5px 30px 0 rgba(0,0,0,.15);
+}
+
+
+/* 尾部 */
+.foot-main {
+    width: 100%;
+    height: 420px;
+    background: url(../img/foot-bg.png) no-repeat center bottom;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.foot-box {
+    position: relative;
+    width: 1200px;
+    height: 420px;
+    left: 50%;
+    margin-left: -600px;
+    padding-top: 234px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.foot-top {
+    width: 100%;
+    height: 111px;
+    border-bottom: 1px solid #b4b8ba;
+}
+
+.left1 {
+    font-size: 28px;
+    color: #b4b8ba;
+    margin-top: 18px;
+}
+.left2 {
+    font-size: 16px;
+    color: #b4b8ba;
+    margin-top: 20px;
+}
+.left3 {
+    font-size: 24px;
+    color: #b4b8ba;
+    margin-top: 20px;
+}
+.foot-top-right p {
+    text-align: right;
+    font-size: 12px;
+    color: #b4b8ba;
+    margin-bottom: 15px;
+}
+.foot-top-right span {
+    font-size: 32px;
+}
+.foot-bottom {
+    margin-top: 15px;
+    /* height: 10px;
+    border: 1px solid red; */
+}
+.foot-bottom-1 p {
+    text-align: center;
+    color: #b4b8ba;
+}
+
+
+
+/* 登录界面 */
+.log_in {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.452);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    display: none;
+}
+.login_in {
+    width: 600px;
+    height: 500px;
+    background-color: #fff;
+   
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -230px;
+    z-index: 100000;
+    visibility: visible;
+}
+.close {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    top: -66px;
+    line-height: 50px;
+}
+
+.close,
+.tab-list {
+    text-align: center;
+    cursor: pointer;
+
+}
+.login-wrapper {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.tab-list {
+    width: 50%;
+    height: 100%;
+    font-size: 24px;
+    color: #333;
+    line-height: 80px;
+    position: relative;
+}
+
+.tab-list .icon {
+    width: 54px;
+    height: 50px;
+    display:block;
+    position: relative;
+    top: 20px;
+    margin-right: 10px;
+   
+}
+
+.spr {
+    background: url(../img/spr.png) no-repeat -302px -171px;
+    left: 40px;
+    
+}
+.spr1 {
+    background: url(../img/spr.png) no-repeat -373px -169px;
+    left: 40px;
+}
+.login-wrapper .active i {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #03d5d7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.active2 {
+    border-bottom: 3px solid #01d5d8;
+}
+
+/* 微信扫码登录 */
+.login-main .main-box {
+    display: none;
+}
+
+.login-main .main-wx {
+    display: block;
+}
+.wx-code,.qq_code {
+    width: 300px; 
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.wx-code h1 {
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+}
+.wx-code img {
+    width: 260px;
+    height: 260px;
+    margin: 20px auto;
+    display: block;
+    border-right: 1px solid #ccc;
+}
+.wx-code p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+
+/* QQ登录界面 */
+.qq_code h1 {
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+}
+.qq_code p {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+.qq_code .one{
+    margin-top: 10px;
+}
+.qq_code p a {
+    color: skyblue;
+}
+.qq_code p a:hover {
+    border-bottom: 1px solid skyblue;
+    cursor: pointer;
+}
+
+.qq-bottom {
+    margin-left: 40px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 30px;
+}
+.qq-bottom li{
+    margin-right: 7px;
+}
+.qq-bottom li a {
+    color: #666;
+}
+.qq-bottom li a:hover {
+    border-bottom: 1px solid #666;
+}
+/* 手机图片 */
+.qq-iphone {
+    width: 200px;
+    margin: 10px 130px;
+    display: none;
+}
+/* 二维码图片 */
+
+.erweima {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 250px;
+    left: 220px;
+    
+}
